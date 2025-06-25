@@ -69,7 +69,7 @@ export default function Slider() {
                 <SwiperSlide><div className='h-full relative bg-cover bg-center bg-[url("https://i.ibb.co/jkdxD4LJ/food-delivery-volunter.jpg")] '>
                     <div class="absolute inset-0 bg-gradient-to-r from-black/60 to-black/40">
                         <div className=' relative z-10 w-9/12 mx-auto h-full pt-6 md:pt-28 space-y-3 md:space-y-6'>
-                            <h1 className=' text-gray-200 md:text-5xl  '>Help Us Feed the Hungry</h1>
+                            <h1 className=' text-gray-200 md:text-5xl text-2xl '>Help Us Feed the Hungry</h1>
                             <p className='md:text-2xl text-[16px] text-gray-400'>Become a volunteer and help deliver meals to those who need it most. Your time and kindness can turn someone’s hunger into hope. Together, we can make sure no one is left behind.A few hours of your time can change someone’s entire day.</p>
                             <Link > 
                                 <button className='bg-green-600 md:text-xl px-4 py-3 cursor-pointer rounded-xl text-white mt-3 md:mt-6'>Join Our Team</button>
