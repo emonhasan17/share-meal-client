@@ -72,7 +72,7 @@ export default function Slider() {
                             <h1 className=' text-gray-200 md:text-5xl text-2xl '>Help Us Feed the Hungry</h1>
                             <p className='md:text-2xl text-[16px] text-gray-400'>Become a volunteer and help deliver meals to those who need it most. Your time and kindness can turn someone’s hunger into hope. Together, we can make sure no one is left behind.A few hours of your time can change someone’s entire day.</p>
                             <Link > 
-                                <button className='bg-green-600 md:text-xl px-4 py-3 cursor-pointer rounded-xl text-white mt-3 md:mt-6'>Join Our Team</button>
+                                <button className=' md:text-xl px-4 py-3 cursor-pointer rounded-xl text-white mt-3 md:mt-6'>Join Our Team</button>
                             </Link>
 
                         </div>
