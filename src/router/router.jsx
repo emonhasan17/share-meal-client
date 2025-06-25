@@ -34,7 +34,6 @@ const router = createBrowserRouter([
             },
             {
                 path: '/singleFood/:id',
-                loader: ({params}) => fetch(`https://food-sharing-server-kappa.vercel.app/foods/${params.id}`),
                 element: <PrivateRoutes><SingleFood></SingleFood></PrivateRoutes>
             },
             {

@@ -1,8 +1,6 @@
 import React from 'react';
-import useAuth from '../Hooks/useAuth';
 import Slider from '../components/homeComponents/slider/slider';
 import AvailableFoodCard from '../components/AvailableFoodCard';
-import { useLoaderData } from 'react-router';
 import Community from '../components/homeComponents/Community';
 import Volunter from '../components/homeComponents/Volunter';
 import { useQuery } from '@tanstack/react-query';
@@ -10,7 +8,6 @@ import Lottie from 'lottie-react';
 import privateLoading from '../assets/lotties/private.json'
 const Home = () => {
 
-    const { user } = useAuth()
     // const meals = useLoaderData()
     const { isPending, isError, error, data: meals } = useQuery({
         queryKey: ['foodReq'],
