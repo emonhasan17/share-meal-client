@@ -2,11 +2,12 @@ import React from 'react';
 import useAuth from '../Hooks/useAuth';
 import axios from 'axios';
 import { toast } from 'react-toastify';
+import useAxiosSecure from '../Hooks/useAxiosSecure';
 
 const AddFood = () => {
 
     const {user} = useAuth()
-
+    const axiosSecure = useAxiosSecure()
     const handleAddFood = e => {
         e.preventDefault()
         const form = e.target
@@ -21,7 +22,7 @@ const AddFood = () => {
         // console.log(food)
 
         // add food in the server----------------
-        axios.post('https://food-sharing-server-kappa.vercel.app/foods',food)
+        axiosSecure.post(`/foods?email=${user.email}`,food)
         .then(res => {
             if(res.data.insertedId){
                 toast.success('food added successfully')

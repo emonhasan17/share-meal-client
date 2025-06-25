@@ -18,7 +18,7 @@ const AvailableFoodCard = ({ meal, layout }) => {
         <div>
             <div className="card bg-base-200 shadow-xl">
                 <div className="md:card-body  md:flex px-3">
-                    <h2 className="text-center md:text-3xl h-[5vh] md:h-[8vh] font-bold md:pt-2 md:pb-4 border-b-1 border-gray-400">{food}</h2>
+                    <h2 className="text-center md:text-3xl h-[5vh] md:h-[8vh] font-bold  md:pb-4 border-b-1 border-gray-400">{food}</h2>
                     <div className='h-[18vh] mt-1 md:space-y-3 flex flex-col'>
                         <p className='md:text-[18px] md:py-1 flex-1'><span className='md:text-[18px] font-semibold'>Quantity : </span> {quantity}</p>
                         <p className='md:text-[18px] md:py-1 flex-1'><span className='md:text-[18px] font-semibold'>Location : </span> {location}</p>

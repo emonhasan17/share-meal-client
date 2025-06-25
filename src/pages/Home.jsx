@@ -5,15 +5,33 @@ import AvailableFoodCard from '../components/AvailableFoodCard';
 import { useLoaderData } from 'react-router';
 import Community from '../components/homeComponents/Community';
 import Volunter from '../components/homeComponents/Volunter';
-
+import { useQuery } from '@tanstack/react-query';
+import Lottie from 'lottie-react';
+import privateLoading from '../assets/lotties/private.json'
 const Home = () => {
 
     const { user } = useAuth()
-    const meals = useLoaderData()
+    // const meals = useLoaderData()
+    const { isPending, isError, error, data: meals } = useQuery({
+        queryKey: ['foodReq'],
+        queryFn: async () => {
+            const res = await fetch('https://food-sharing-server-kappa.vercel.app/foods/quantity')
+            return res.json()
+
+        }
+    })
     // console.log(user, meals)
     const layout = false
 
+    if (isPending) {
+        return <div className='flex items-center justify-center h-[90vh]'>
+            <Lottie style={{ width: '200px' }} animationData={privateLoading} loop={true}></Lottie>
+        </div>
+    }
 
+    if(isError){
+        return <p>{error.message}</p>
+    }
 
     return (
         <div>
