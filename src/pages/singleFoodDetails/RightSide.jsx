@@ -8,7 +8,7 @@ const RightSide = ({meal}) => {
                     <h1 className='md:text-6xl text-4xl font-medium '>{food}</h1>
 
                     {/* <p className='md:text-4xl text-2xl '>{liked} people interested in this recipe</p> */}
-                    <p className='md:text-3xl text-2xl'>Expired Date:</p>
+                    <p className='md:text-3xl '>Expired Date:</p>
                     <p className='bg-green-600 md:text-3xl text-2xl py-4  rounded-2xl text-white text-center'>{date}</p>
                     {/* <div className='pb-8 border-b-1 border-gray-400'>
                         <p className='md:text-3xl  text-2xl'>
