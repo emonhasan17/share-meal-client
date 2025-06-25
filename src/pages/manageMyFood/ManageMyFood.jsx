@@ -15,7 +15,7 @@ const ManageMyFood = () => {
     return (
         <div>
             <div className='text-center space-y-4 mt-6 mb-10'>
-                <h1 className='md:text-6xl  font-semibold text-gray-700'>Manage My <span className='text-green-500'>Food</span> Donations</h1>
+                <h1 className='md:text-6xl text-5xl font-semibold text-gray-700'>Manage My <span className='text-green-500'>Food</span> Donations</h1>
                 <p className='text-xl px-2 md:text-2xl text-gray-500'>View, edit, or remove your donated food items. Keep your listings up-to-date to help those in need.</p>
             </div>
             <div>
