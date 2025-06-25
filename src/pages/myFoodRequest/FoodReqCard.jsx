@@ -21,7 +21,7 @@ const FoodReqCard = ({ req }) => {
                         <p className="text-xl md:text-2xl">Request Date: {reqDate}</p>
                         <p className="text-xl md:text-2xl">Expired Date: {expire}</p>
                         <p className="text-xl md:text-2xl">Location: {location}</p>
-                        <p className="text-xl md:text-2xl">About Food: {note}</p>
+                        <p className="text-xl ">About Food: {note}</p>
                     </div>
                 </div>
             </div>
