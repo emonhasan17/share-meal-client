@@ -9,7 +9,7 @@ import Lottie from 'lottie-react';
 
 const Footer = () => {
     return (
-        <div className='relative h-full bg-cover bg-center bg-[url("https://i.ibb.co/dw5gvDrk/begging-bridge-with-person-who-handed-bread.jpg")] '>
+        <div className='relative mt-16 md:mt-28 h-full bg-cover bg-center bg-[url("https://i.ibb.co/dw5gvDrk/begging-bridge-with-person-who-handed-bread.jpg")] '>
 
             <div class="absolute inset-0 bg-gradient-to-t from-black/100 to-black/40">
 

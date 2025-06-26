@@ -6,6 +6,10 @@ import Volunter from '../components/homeComponents/Volunter';
 import { useQuery } from '@tanstack/react-query';
 import Lottie from 'lottie-react';
 import privateLoading from '../assets/lotties/private.json'
+import { Link } from 'react-router';
+import { motion } from "motion/react"
+
+
 const Home = () => {
 
     // const meals = useLoaderData()
@@ -26,16 +30,23 @@ const Home = () => {
         </div>
     }
 
-    if(isError){
+    if (isError) {
         return <p>{error.message}</p>
     }
 
     return (
-        <div>
+        <motion.div
+            initial={{ opacity: 0, y: 50 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.8, ease: 'easeOut' }}>
 
 
             <div className='text-center space-y-3 mt-3 mb-10 '>
-                <h1 className='text-5xl md:text-6xl font-semibold text-gray-700'>Share Food. Spread Hope</h1>
+                <motion.h1
+                    initial={{ opacity: 0, y: -50 }}
+                    animate={{ opacity: 1, y: 0 }}
+                    transition={{ delay: 0.6, duration: 0.9 }}
+                    className='text-5xl md:text-6xl font-semibold text-gray-700'>Share Food. Spread Hope</motion.h1>
                 <p className='text-xl text-gray-600 px-2'>Connecting people with extra food to those who need it — because no one should go hungry.</p>
             </div>
 
@@ -61,6 +72,9 @@ const Home = () => {
                 </div>
 
             </div>
+            <div className='text-center mt-12'>
+                <Link to='/availableFood' className='btn btn-success px-12 py-8 text-3xl'>Show All</Link>
+            </div>
 
             <div>
                 <div className='text-center space-y-3 mt-24 mb-10 '>
@@ -84,7 +98,7 @@ const Home = () => {
             </div>
 
 
-        </div>
+        </motion.div>
     );
 };
 
