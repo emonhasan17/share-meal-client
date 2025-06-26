@@ -1,12 +1,38 @@
-# React + Vite
+Project Name : Share meal
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Live URL: https://food-sharing-51eaa.web.app
 
-Currently, two official plugins are available:
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+🎯 Purpose :
+Food Sharing Web** is a community-driven platform that connects people who have extra food with those in need. Whether you're a restaurant, household, or individual, you can share surplus food directly with the poor and starving individuals in your area. This project aims to reduce food waste and support humanity by ensuring that no one goes hungry while food is being thrown away elsewhere.
 
-## Expanding the ESLint configuration
+✨ Key Features :
+Beautiful UI Built with React – Responsive, clean design optimized for a smooth customer experience.
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+Firebase Authentication – Secure user sign-up, login, and session management.
+
+Dynamic Routing with React Router – Effortless navigation across pages like Home, Plans, FAQ, and User Dashboard.
+
+Environment Variables Support – Secure configuration using .env files for Firebase keys and other sensitive data.
+
+Manage My Foods – Donors can see and manage their listed food items.
+
+Volunteer Hub – Join as a volunteer to help deliver food to people in need.
+
+Search & Request - Users in need can find available food and request it.
+
+Share Food - Upload food details (name, image, quantity, location, expiry).
+
+Security - Using Firebase Token to make the website secure
+
+
+## 📦 NPM Packages Used
+
+- `axios` – For API requests  
+- `react-router-dom` – Routing management  
+- `firebase` – Authentication and token handling  
+- `react-hook-form` – Form validation  
+- `sweetalert2` – Alert messages  
+- `react` – Icons
+- `toastify` – Alert
+- `swiper slider` – Slider
