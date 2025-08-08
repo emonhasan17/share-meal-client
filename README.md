@@ -36,3 +36,49 @@ Security - Using Firebase Token to make the website secure
 - `react` – Icons
 - `toastify` – Alert
 - `swiper slider` – Slider
+
+
+## Getting Started
+
+Follow these steps to run the project locally:
+
+1. **Clone the repository:**
+    ```bash
+    git clone https://github.com/your-username/food-sharing-website.git
+    cd food-sharing-website
+    ```
+
+2. **Install dependencies for client and server:**
+    ```bash
+    cd client
+    npm install
+
+    cd ../server
+    npm install
+    ```
+
+3. **Configure environment variables:**
+
+    Create a `.env` file in the `/server` folder and add:
+    ```
+    MONGO_URI=your_mongodb_connection_string
+    FIREBASE_API_KEY=your_firebase_api_key
+    ...
+    ```
+
+4. **Run the backend server:**
+    ```bash
+    cd server
+    npm start
+    ```
+
+5. **Run the frontend client:**
+    ```bash
+    cd ../client
+    npm start
+    ```
+
+6. **Open the browser and go to:**
+    ```
+    http://localhost:3000
+    ```
